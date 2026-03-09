@@ -32,4 +32,32 @@ let book = {
   autor: "David Flanagan",
 };
 
-console.log(book.nome);
+console.log(book);
+
+console.log(book.nome); // Acessando o valor
+console.log(book["autor"]); // Outra forma de acessar o valor do objeto
+
+book.ano = 2025; // atribuição de nova propriedade (ano)
+console.log(book.ano);
+
+book.conteudo = {};
+console.log(book.conteudo); // objeto vazio sem qualquer propriedade
+
+console.log(book.conteudo?.pagina); //acessa condicionalmente propriedade com ?
+
+console.log("==========");
+
+let primos = [2, 3, 5, 7];
+
+console.log(primos[0]); // pega o primeiro elemento
+console.log(primos.length); // mostra quantidade de itens do array
+console.log(primos[primos.length - 1]); // pega o ultimo valor da lista
+console.log(primos[4]); // nenhum valor nesse indice
+
+console.log((primos[4] = 4)); // adicionando novo valor na lista indice 4
+console.log(primos); // lista completa
+console.log((primos[4] = 11)); // alterando o valor pelo indice (4)
+console.log(primos); // lista completa, valor corrigido
+
+let vazio = [];
+console.log(vazio.length); // array vazio
