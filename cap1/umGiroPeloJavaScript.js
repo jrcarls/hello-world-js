@@ -60,4 +60,58 @@ console.log((primos[4] = 11)); // alterando o valor pelo indice (4)
 console.log(primos); // lista completa, valor corrigido
 
 let vazio = [];
-console.log(vazio.length); // array vazio
+console.log(vazio.length, "tamanho"); // array vazio
+
+let arrayObjetos = [
+  { x: 1, y: 2 }, // cada array com dois elementos
+  { y: 2, x: 1 }, // cada elemento e 1 objeto
+];
+
+console.log(arrayObjetos[1].y);
+
+let data = {
+  // 1 objeto com duas propriedades
+  trial: [
+    // o valor de cada proriedade e um array
+    [1, 2], // os elementos do array são também um array
+    [3, 4],
+  ],
+  trial2: [
+    [2, 3],
+    [4, 5],
+  ],
+};
+
+console.log(data.trial[0].push(3));
+console.log(data.trial[0]);
+
+console.log("---------------------");
+
+// operadores aritimeticos
+console.log(5 + 2); // adição
+console.log(5 - 2); // subtracao
+console.log(5 * 2); // multiplicacao
+console.log(5 / 2); // divisão
+console.log(5 / 2); // resto da divisão
+
+console.log(arrayObjetos[0].x + arrayObjetos[1].y); // operação mais complexa
+console.log("5" + "2"); // concatenação
+
+console.log("----------operadores aritimeticos abreviados-----------");
+
+let contador = 0;
+console.log(contador);
+
+contador++; // não retorna (mesmo com console log seria 0) só incrementa
+console.log(contador); // valor 1
+
+contador--; // não retorna só decrementa
+console.log(contador); // volta para 0
+
+contador += 2; // não retorna
+console.log(contador); //incrementa 2
+
+contador *= 3;
+console.log(contador);
+
+console.log("----------operadores igualdade e relacional-----------");
